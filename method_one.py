@@ -5,10 +5,11 @@ url = 'http://www.midi.gouv.qc.ca/publications/en/'
 
 def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   """Use Google search engine to find links to files with a specific extension in a given webpage and its children.
-
-  :param givenUrl: (string) The url to look for files in it and its children.
-  :param extension: (string) The type of file to look for. (do not include the dot).
-  :param maxNumofFilesToFind: (int) The max number of files to find.
+  
+  Keyword arguments:
+  givenUrl -- (string) The url to look for files in it and its children.
+  extension -- (string) The type of file to look for. Do NOT include the dot (as in .pdf).
+  maxNumofFilesToFind -- (int) The max number of files to find (default 30).
   """
   flag = False  # to check if maxNumberOfFilesToFind has been reached
   startingResultNum = 0  # to build the other pages of search results
