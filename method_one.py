@@ -55,4 +55,4 @@ def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   
   return output
 
-print(*get_Files_Using_Google_Search(url, 'pdf'), sep='\n')
+print(*get_files_using_Google_search(url, 'pdf'), sep='\n')
