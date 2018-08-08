@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
+def get_links_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   """Use Google search engine to find links to files with a specific extension in a given webpage and its children.
   
   Keyword arguments:
