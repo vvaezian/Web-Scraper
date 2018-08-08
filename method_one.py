@@ -54,5 +54,5 @@ def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   
   return output
 
-url = 'http://www.midi.gouv.qc.ca/publications/en/'
-print(*get_files_using_Google_search(url, 'pdf'), sep='\n')
+#url = 'http://www.midi.gouv.qc.ca/publications/en/'
+#print(*get_files_using_Google_search(url, 'pdf'), sep='\n')
