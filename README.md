@@ -13,6 +13,6 @@ c) If many requests are sent in a short period of time, Google blocks access and
 2- Using a direct method of finding all urls in the given page and following those links if they are refering to childrend pages and seach recursively.  
 While this method does not miss any files in pages that it gets to (in contrast to method 1 which sometimes do), it may not find all the files because:  
 a) Some webpages in the domain may be isolated i.e. there is no link to them in the parent pages. For these cases method 1 above works.  
-b) In rare cases the link to a file of type xyz may not have .xyz in the link, for example (http://www.sfu.ca/~robson/Random). In these cases method 2 cannot detect the file (because it only relies on the extesion appearing in the link), but method 1 detects correctly in these cases.
+b) In rare cases the link to a file of type xyz may not have .xyz in the link ([example](http://www.sfu.ca/~robson/Random)). In these cases method 2 cannot detect the file (because it only relies on the extesion appearing in the link), but method 1 detects correctly in these cases.
 
 So the two methods complete each other's gaps.
