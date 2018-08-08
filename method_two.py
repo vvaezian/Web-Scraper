@@ -15,17 +15,17 @@ def get_files_recursively(url, extension, restricted=False, recursive=True, dept
   maxNumOfFilesToFind -- The max number of files to find (default 30).
   """
   output = set()
-  # The following is the list of extensions that getting urls from links ending at them takes too long. It is used in the page_urls method.
+  # The following is the list of extensions that getting urls from links ending at them takes too long. It is used in the _page_urls method.
   extensionsDict = {'2':['.db', '.gz'], 
                     '3':['.gif', '.png', '.ico', '.htm', '.jpg', '.bmp', '.pdf', '.mp3', 'mp4', '.ogg', '.wav', '.wma', '.wmv', '.3gp', '.avi', '.bin', '.exe', '.iso', '.ppt', '.rar', '.zip', '.tar', '.tif', '.mkv', '.mov', ], 
-                    '4':['.jpeg', '.gzip', '.html'] 
+                    '4':['.jpeg', '.gzip', '.html']
                    }
   try:
     extensionsDict.get(str(len(extension))).remove('.'+ extension)
   except:
     pass
 
-  def page_urls(url, extension, restricted, MAXnumberOfURLsPerPage, extensionsDict):
+  def _page_urls(url, extension, restricted, MAXnumberOfURLsPerPage, extensionsDict):
     """Return the urls in the webpage as a set."""
     length = len(extension)
     try:
@@ -75,7 +75,7 @@ def get_files_recursively(url, extension, restricted=False, recursive=True, dept
       return
     if depth > -1:
       length = len(extension)
-      urls = page_urls(url, extension, restricted, MAXnumberOfURLsPerPage, extensionsDict)
+      urls = _page_urls(url, extension, restricted, MAXnumberOfURLsPerPage, extensionsDict)
       for item in urls:
         depth_copy = depth
         if item[-(length + 1) :] == '.' + extension: # if the extension is matched
@@ -100,6 +100,5 @@ def get_files_recursively(url, extension, restricted=False, recursive=True, dept
   _find_by_extension(url, extension, restricted, recursive, depth, MAXnumberOfURLsPerPage, maxNumOfFilesToFind, output, extensionsDict)
   return output
 
-
-url = 'http://www.midi.gouv.qc.ca/publications/en/'
-print(*get_files_recursively(url, 'pdf', depth=4, maxNumOfFilesToFind=35), sep='\n')
+#url = 'http://www.midi.gouv.qc.ca/publications/en/'
+#print(*get_files_recursively(url, 'pdf', depth=4, maxNumOfFilesToFind=35), sep='\n')
