@@ -26,7 +26,7 @@ def get_files_recursively(url, extension, restricted=False, recursive=True, dept
     pass
 
   def page_urls(url, extension, restricted, MAXnumberOfURLsPerPage, extensionsDict):
-    """Return the urls in the webpage as a list."""
+    """Return the urls in the webpage as a set."""
     length = len(extension)
     try:
       # Packages the request, send the request and catch the response: r
