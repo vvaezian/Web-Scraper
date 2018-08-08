@@ -16,7 +16,10 @@ def get_files_recursively(url, extension, restricted=False, recursive=True, dept
   """
   output = set()
   # The following is the list of extensions that getting urls from links ending at them takes too long. It is used in the page_urls method.
-  extensionsDict = {'2':['.db', '.gz'], '3':['.gif', '.png', '.ico', '.htm', '.jpg', '.bmp', '.pdf', '.mp3', 'mp4', '.ogg', '.wav', '.wma', '.wmv', '.3gp', '.avi', '.bin', '.exe', '.iso', '.ppt', '.rar', '.zip', '.tar', '.tif', '.mkv', '.mov', ], '4':['.jpeg', '.gzip', '.html'] }
+  extensionsDict = {'2':['.db', '.gz'], 
+                    '3':['.gif', '.png', '.ico', '.htm', '.jpg', '.bmp', '.pdf', '.mp3', 'mp4', '.ogg', '.wav', '.wma', '.wmv', '.3gp', '.avi', '.bin', '.exe', '.iso', '.ppt', '.rar', '.zip', '.tar', '.tif', '.mkv', '.mov', ], 
+                    '4':['.jpeg', '.gzip', '.html'] 
+                   }
   try:
     extensionsDict.get(str(len(extension))).remove('.'+ extension)
   except:
