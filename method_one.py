@@ -1,8 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'http://www.midi.gouv.qc.ca/publications/en/'
-
 def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   """Use Google search engine to find links to files with a specific extension in a given webpage and its children.
   
@@ -56,4 +54,5 @@ def get_files_using_Google_search(givenUrl, extension, maxNumOfFilesToFind=30):
   
   return output
 
+url = 'http://www.midi.gouv.qc.ca/publications/en/'
 print(*get_files_using_Google_search(url, 'pdf'), sep='\n')
