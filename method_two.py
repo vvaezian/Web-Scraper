@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_files_recursively(url, extension, restricted=False, recursive=True, depth=2, MAXnumberOfURLsPerPage=50, maxNumOfFilesToFind=35):
+def get_links_recursively(url, extension, restricted=False, recursive=True, depth=2, MAXnumberOfURLsPerPage=50, maxNumOfFilesToFind=35):
   """Find all files with the given extension in the webpage with the given url and its children.
   
   Keyword arguments:
