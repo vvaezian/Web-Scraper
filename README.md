@@ -23,7 +23,7 @@ So the two methods complete each other's gaps.
 ## Usage  
 ```python
 >>> import web_scraper as ws
->>> print(ws.find_links_by_extension("www.sfu.ca", 'pdf')
+>>> print(ws.find_links_by_extension("www.sfu.ca", 'pdf'))  # you can also include http:// or https:// part of the url.
 ```
 
 [1]: http://www.midi.gouv.qc.ca/publications/en/planification/
