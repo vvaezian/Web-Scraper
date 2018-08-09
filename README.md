@@ -17,6 +17,15 @@ While this method does not miss any files in pages that it gets to (in contrast 
 
 So the two methods complete each other's gaps.
 
+## installation  
+`$ pip install web-scraper`
+
+## Usage  
+```python
+>>> import web_scraper as ws
+>>> print(ws.find_links_by_extension("www.bbc.com", 'pdf')
+```
+
 [1]: http://www.midi.gouv.qc.ca/publications/en/planification/
 [2]: https://www.google.com/search?q=site%3Ahttp%3A%2F%2Fwww.midi.gouv.qc.ca%2Fpublications%2Fen%2Fplanification%2F+filetype%3Apdf
 [3]: http://www.sfu.ca/~vvaezian/Summary/
