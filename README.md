@@ -1,16 +1,16 @@
 # Web-Scraper
-Building on top of bs4 library, for finding files in a webpage and its children.
+Building on top of bs4 library, this package include modules for findng links in a webpage and its children.
 
-Files are found using two methods and then added together:
+In the main module `find_links_by_extension` links are found using two sub-modules and then added together:
 
-1. Using Google Search Results  
+1. Using Google Search Results (`get_links_using_Google_search`)
 Since we can specify which types of files we are looking for when we search in Google, this methos scrapes these results.
 But this method is not complete:  
-* Google search works based on crawlers, and sometimes they don't index properly. For example [this][1] webpage has three pdf files at the moment (Aug 7 2018), but when we [use google search][2]() to find them it finds only two  although the files were uploaded 4 years ago.  
+* Google search works based on crawlers, and sometimes they don't index properly. For example [this][1] webpage has three pdf files at the moment (Aug 7 2018), but when we [use google search][2] to find them it finds only two  although the files were uploaded 4 years ago.  
 * It doesn't work with some websites. For example [this][3] webpage  has three pdf files but google [cannot find any][4]. Apparently the ~ symbol is cause of problem.  
 * If many requests are sent in a short period of time, Google blocks access and asks for CAPTCHA solving.
 
-2. Using a direct method of finding all urls in the given page and following those links if they are refering to childrend pages and seach recursively.  
+2. Using a direct method of finding all urls in the given page and following those links if they are refering to childrend pages and seach recursively (`get_links_directly`)
 While this method does not miss any files in pages that it gets to (in contrast to method 1 which sometimes do), it may not find all the files because:  
 * Some webpages in the domain may be isolated i.e. there is no link to them in the parent pages. For these cases method 1 above works.  
 * In rare cases the link to a file of type xyz may not have .xyz in the link ([example][5]). In these cases method 2 cannot detect the file (because it only relies on the extesion appearing in the link), but method 1 detects correctly in these cases.
