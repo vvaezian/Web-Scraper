@@ -23,18 +23,14 @@ So the two methods complete each other's gaps.
 ## Usage  
 ```python
 >>> import web_scraper as ws
->>> print(ws.find_links_by_extension("www.sfu.ca", 'pdf'))  # you can also include http:// or https:// part of the url.
+>>> print(ws.find_links_by_extension("https://www.sfu.ca", 'pdf'))
 ```
 
 ## Keyword arguments:
-**url** -- The webpage's url  
-**extension** -- The file extension. Do not include dot.  
-**restricted** -- Wether to search only for files that their link is superset of the url given (default False).  
-**recursive** -- Whether to look in child-pages (default True).  
-**depth** -- (used only in the direct method) How deep follow the links. Is considered only if recursive=True (default 2, minimum 0).  
-**MAXnumberOfLinksPerPage** -- (used only in the direct method) This is in case where execution gets stuck in a webpage for unforseen reasons (default 50).  
-**maxNumberOfLinksToFind** -- (default 30).  
-**sorted** -- Whether to sort the output list.  
+**url:** The webpage's url  
+**extension:** The file extension. Do not include dot.  
+**maxNumberOfLinksToFind:** Upper bound for number of links to find (default 30).  
+**sorted:** Whether to sort the output list.  
 
 [1]: http://www.midi.gouv.qc.ca/publications/en/planification/
 [2]: https://www.google.com/search?q=site%3Ahttp%3A%2F%2Fwww.midi.gouv.qc.ca%2Fpublications%2Fen%2Fplanification%2F+filetype%3Apdf
