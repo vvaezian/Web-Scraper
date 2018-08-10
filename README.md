@@ -32,7 +32,7 @@ So the two methods complete each other's gaps.
 `get_links_using_Google_search`  
 `get_links_directly`  
 
-`find_links_by_extension`  
+* `find_links_by_extension`  
 Uses methods `get_links_using_Google_search` and `get_links_directly` to find links to files that have the given extension in the given webpage and its children.
 
 ###### Keyword arguments:  
@@ -40,6 +40,12 @@ Uses methods `get_links_using_Google_search` and `get_links_directly` to find li
 **extension:** The file extension. Do not include dot.  
 **maxNumberOfLinksToFind:** Upper bound for number of links to find (default 30).  
 **sorted:** Whether to sort the output list.  
+
+* `get_links_using_Google_search`  
+See the source file.  
+
+* `get_links_directly`  
+See the source file.
 
 [1]: http://www.midi.gouv.qc.ca/publications/en/planification/
 [2]: https://www.google.com/search?q=site%3Ahttp%3A%2F%2Fwww.midi.gouv.qc.ca%2Fpublications%2Fen%2Fplanification%2F+filetype%3Apdf
