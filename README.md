@@ -20,7 +20,7 @@ So the two methods complete each other's gaps.
 ## installation 
 `$ pip install web-scraper`  
 
-**Note1:** This package relies on `requests`, `bs4` and `html5lib` libraries. So You need to have them installed:  
+**Note:** This package relies on `requests`, `bs4` and `html5lib` libraries. So You need to have them installed:  
 `$ pip install requests bs4 html5lib`
 
 ## Usage  
