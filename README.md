@@ -33,8 +33,8 @@ So the two methods complete each other's gaps.
 `get_links_directly`  
 
 * `find_links_by_extension`  
-Uses methods `get_links_using_Google_search` and `get_links_directly` to find links to files that have the given extension in the given webpage and its children.
-###### Keyword arguments:  
+Uses methods `get_links_using_Google_search` and `get_links_directly` to find links to files that have the given extension in the given webpage and its children.  
+Keyword arguments:  
 **url:** The webpage's url  
 **extension:** The file extension. Do not include dot.  
 **maxNumberOfLinksToFind:** Upper bound for number of links to find (default 30).  
