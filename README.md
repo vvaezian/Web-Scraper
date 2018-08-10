@@ -30,7 +30,6 @@ So the two methods complete each other's gaps.
 ```
 
 ## Methods
-#### Summary
 `find_links_by_extension`  
 `get_links_using_Google_search`  
 `get_links_directly`  
