@@ -1,5 +1,5 @@
 # web-scraper
-Building on top of bs4 library, this package include modules for findng links in a webpage and its children.
+This package include modules for findng links in a webpage and its children.
 
 In the main module `find_links_by_extension` links are found using two sub-modules and then added together:
 
