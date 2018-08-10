@@ -7,7 +7,7 @@ In the main module `find_links_by_extension` links are found using two sub-modul
 Since we can specify which types of files we are looking for when we search in Google, this methos scrapes these results.
 But this method is not complete:  
 * Google search works based on crawlers, and sometimes they don't index properly. For example [this][1] webpage has three pdf files at the moment (Aug 7 2018), but when we [use google search][2] to find them it finds only two  although the files were uploaded 4 years ago.  
-* It doesn't work with some websites. For example [this][3] webpage  has three pdf files but google [cannot find any][4]. Apparently the ~ symbol is cause of problem.  
+* It doesn't work with some websites. For example [this][3] webpage  has three pdf files but google [cannot find any][4]. 
 * If many requests are sent in a short period of time, Google blocks access and asks for CAPTCHA solving.
 
 2. Using a direct method of finding all urls in the given page and following those links if they are refering to childrend pages and seach recursively (`get_links_directly`)  
