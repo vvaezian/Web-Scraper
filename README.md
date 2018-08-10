@@ -26,6 +26,13 @@ So the two methods complete each other's gaps.
 >>> print(ws.find_links_by_extension("https://www.sfu.ca", 'pdf'))
 ```
 
+## Methods
+####Summary
+`find_links_by_extension`  
+`get_links_using_Google_search`  
+`get_links_directly`  
+
+`def find_links_by_extension(url, extension, restricted=False, recursive=True, depth=2, MAXnumberOfLinksPerPage=50, maxNumberOfLinksToFind=30, sorted=False)` 
 ## Keyword arguments:
 **url:** The webpage's url  
 **extension:** The file extension. Do not include dot.  
