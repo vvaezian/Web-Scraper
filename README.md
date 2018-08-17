@@ -41,7 +41,7 @@ Uses methods `get_links_using_Google_search` and `get_links_directly` to find li
   **url:** The webpage's url  
   **extension:** The file extension. Do not include dot.  
   **maxNumberOfLinksToFind:** Upper bound for number of links to find (default 30).  
-  **sorted:** Whether to sort the output list.  
+  **sorted:** Whether to sort the output list (default False).  
 
 * `get_links_using_Google_search`  
 See the source file.  
