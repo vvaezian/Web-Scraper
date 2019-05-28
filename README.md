@@ -17,7 +17,7 @@ While this method does not miss any files in pages that it gets to (in contrast 
 
 So the two methods complete each other's gaps.
 
-## installation 
+## Installation 
 `$ pip install web-scraper`  
 
 **Note:** This package relies on `requests`, `bs4` and `html5lib` libraries. So You need to have them installed:  
