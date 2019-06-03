@@ -40,7 +40,7 @@ Uses methods `get_links_using_Google_search` and `get_links_directly` to find li
 
   ###### Keyword arguments:
   **url:** The webpage's url  
-  **extension:** The file extension. Do not include dot.  
+  **extension:** The file extension (Do not include 'dot').  
   **maxNumberOfLinksToFind:** Upper bound for number of links to find (default 30).  
   **sorted:** Whether to sort the output list (default False).  
 
