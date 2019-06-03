@@ -27,6 +27,7 @@ So the two methods complete each other's gaps.
 ```python
 >>> import web_scraper as ws
 >>> print(ws.find_links_by_extension("http://colah.github.io", 'pdf'))
+# Printing one item per line (Python 3): print(*ws.find_links_by_extension("http://colah.github.io", 'pdf'), sep='\n')
 ```
 
 ## Methods
