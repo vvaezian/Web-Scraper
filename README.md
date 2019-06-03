@@ -54,3 +54,6 @@ See the source file.
 [3]: http://www.sfu.ca/~vvaezian/Summary/
 [4]: https://www.google.com/search?q=site%3Ahttp%3A%2F%2Fwww.sfu.ca%2F~vvaezian%2FSummary%2F+filetype%3Apdf
 [5]: http://www.sfu.ca/~robson/Random
+
+## To-Do
+- [ ] Use linked lists for traversing links
