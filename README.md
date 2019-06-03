@@ -26,7 +26,7 @@ So the two methods complete each other's gaps.
 ## Usage  
 ```python
 >>> import web_scraper as ws
->>> print(ws.find_links_by_extension("https://www.sfu.ca", 'pdf'))
+>>> print(ws.find_links_by_extension("http://colah.github.io", 'pdf'))
 ```
 
 ## Methods
