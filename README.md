@@ -1,4 +1,5 @@
-# web-scraper
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/vvaezian/Web-Scraper)
+
 This package include modules for findng links in a webpage and its children.
 
 In the main module `find_links_by_extension` links are found using two sub-modules and then added together:
